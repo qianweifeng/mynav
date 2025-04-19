@@ -21,6 +21,12 @@ const websites = [
         description: "Web开发文档",
         favicon: "M"
     },
+    {
+        name: "CloudFlare",
+        url: "https://www.cloudflare.com/zh-cn/",
+        description: "Web开发文档",
+        favicon: "CF"
+    },
     // 可以添加更多网站...
 ];
 
