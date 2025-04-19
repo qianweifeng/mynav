@@ -1,11 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-<meta charset="utf-8">
-<title>QWF的导航主页</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的网站收藏</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>常用网址</h1>
-    <p>办公网站</p>
+    <header>
+        <h1>我的网站收藏</h1>
+        <p>精心挑选的网络资源</p>
+    </header>
+    
+    <main class="grid-container">
+        <!-- 示例收藏项目 - 实际使用时可以添加更多 -->
+        <a href="https://example.com" class="website-card" target="_blank">
+            <div class="card-content">
+                <div class="favicon">E</div>
+                <h3>示例网站</h3>
+                <p>这是一个示例描述</p>
+            </div>
+        </a>
+        
+        <!-- 更多收藏项目可以在这里添加 -->
+        <!-- 复制上面的a标签结构并修改内容即可 -->
+    </main>
+    
+    <footer>
+        <p>© 2023 我的收藏 | 最后更新: <span id="update-date"></span></p>
+    </footer>
+    
+    <script src="script.js"></script>
 </body>
 </html>
