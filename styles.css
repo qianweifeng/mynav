@@ -1,108 +1,82 @@
-/* 基础样式 */
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
+/* 基本页面样式 */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
-    color: #333;
+    box-sizing: border-box;
 }
 
-header {
-    background-color: #2c3e50;
-    color: white;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;  /* 背景暗色 */
+    color: #e0e0e0;  /* 文字颜色 */
+    padding: 20px;
+    line-height: 1.5;
+}
+
+/* 分类标题样式 */
+.category {
+    margin-bottom: 40px;
+}
+
+.category h2 {
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 10px;
     text-align: center;
-    padding: 2rem 0;
-    margin-bottom: 2rem;
 }
 
-h1 {
-    margin: 0;
-}
-
-footer {
-    text-align: center;
-    padding: 1rem 0;
-    background-color: #2c3e50;
-    color: white;
-    margin-top: 2rem;
-}
-
-/* 网格布局 */
+/* 网格容器 */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);  /* 一行显示 6 个方格 */
     gap: 20px;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 10px;
 }
 
-/* 网站卡片样式 */
+/* 每个网址卡片 */
 .website-card {
-    display: block;
-    background-color: white;
+    background-color: #333;  /* 暗色背景 */
+    color: #fff;  /* 白色文字 */
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    text-decoration: none;
-    color: #333;
+    padding: 10px;
+    text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    height: 180px;
-    overflow: hidden;
 }
 
 .website-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    background-color:white;
+    color: black;
+    transform: translateY(-5px);  /* 悬停效果：向上浮动 */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-.card-content {
-    padding: 15px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.favicon {
-    width: 40px;
-    height: 40px;
-    background-color: #3498db;
-    color: white;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    margin-bottom: 10px;
+.website-card a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .website-card h3 {
-    margin: 0 0 5px 0;
-    font-size: 1rem;
+    font-size: 18px;
+    margin-bottom: 10px;
 }
 
 .website-card p {
-    margin: 0;
-    font-size: 0.8rem;
-    color: #666;
-    flex-grow: 1;
+    font-size: 14px;
+    color: #bbb;
 }
 
-/* 响应式设计 */
-@media (max-width: 1024px) {
-    .grid-container {
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
-
+/* 响应式设计：小屏幕调整为每行 3 个方格 */
 @media (max-width: 768px) {
     .grid-container {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);  /* 更小屏设备显示 3 列 */
     }
 }
 
+/* 手机显示每行 2 个方格 */
 @media (max-width: 480px) {
     .grid-container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);  /* 手机显示 2 列 */
     }
 }

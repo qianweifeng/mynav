@@ -1,33 +1,83 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>个人导航页</title>
+    <title>个人导航</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>常用网址</h1>
-    </header>
-    
-    <main class="grid-container">
-        <!-- 示例收藏项目 - 实际使用时可以添加更多 -->
-        <a href="https://www.google.com" class="website-card" target="_blank">
-            <div class="card-content">
-                <div class="favicon">E</div>
-                <h3>Google</h3>
+
+    <!-- 分类: 搜索查询 -->
+    <div class="category">
+        <h2>搜索查询</h2>
+        <div class="grid-container">
+            <div class="website-card">
+                <a href="https://www.google.com" class="website-link">
+                    <h3>Google</h3>
+                    <p>谷歌搜索</p>
+                </a>
             </div>
-        </a>
-        
-        <!-- 更多收藏项目可以在这里添加 -->
-        <!-- 复制上面的a标签结构并修改内容即可 -->
-    </main>
-    
-    <footer>
-        <p>© 2025 我的收藏 | 最后更新: <span id="update-date"></span></p>
-    </footer>
-    
+            <div class="website-card">
+                <a href="https://www.baidu.com" class="website-link">
+                    <h3>Baidu</h3>
+                    <p>百度搜索</p>
+                </a>
+            </div>
+            <div class="website-card">
+                <a href="https://www.zhihu.com" class="website-link">
+                    <h3>知乎</h3>
+                    <p>问答平台</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 分类: AI 网站 -->
+    <div class="category">
+        <h2>AI 网站</h2>
+        <div class="grid-container">
+            <div class="website-card">
+                <a href="https://chat.deepseek.com" class="website-link">
+                    <h3>DeeSeek</h3>
+                    <p>深度思考</p>
+                </a>
+            </div>
+            <div class="website-card">
+                <a href="https://chat.openai.com" class="website-link">
+                    <h3>ChatGpt</h3>
+                    <p>OpenAI</p>
+                </a>
+            </div>
+            <div class="website-card">
+                <a href="https://www.reddit.com" class="website-link">
+                    <h3>Reddit</h3>
+                    <p>社交新闻平台</p>
+                </a>
+            </div>
+            <div class="website-card">
+                <a href="https://www.trello.com" class="website-link">
+                    <h3>Trello</h3>
+                    <p>项目管理工具</p>
+                </a>
+            </div>
+            <div class="website-card">
+                <a href="https://www.slack.com" class="website-link">
+                    <h3>Slack</h3>
+                    <p>团队沟通工具</p>
+                </a>
+            </div>
+            <div class="website-card">
+                <a href="https://www.figma.com" class="website-link">
+                    <h3>Figma</h3>
+                    <p>UI/UX设计工具</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 更多分类可以继续添加 -->
+
     <script src="script.js"></script>
 </body>
-</html>
+</html>    
